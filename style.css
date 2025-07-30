@@ -1,0 +1,86 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(135deg, #eabe66cc 0%, #a2964bc6 100%);
+     min-height: 100vh;
+     padding: 20px;
+ }
+
+ .annoncen-container {
+     max-width: 1400px;
+     margin: 0 auto;
+     background: rgba(255, 255, 255, 0.95);
+     border-radius: 20px;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(10px);
+     overflow: hidden;
+ }
+
+ .main-content {
+     display: flex;
+     min-height: 90vh;
+ }
+
+ .container-left {
+     width: 100%;
+     max-width: 50%;
+     padding: 40px;
+     background: white;
+     border-right: 1px solid #e0e0e0;
+ }
+
+ .container-right {
+     width: 100%;
+     max-width: 50%;
+     padding: 40px;
+     background: #f8fafc;
+     position: relative;
+ }
+
+ h1 {
+     color: #2d3748;
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 10px;
+     background: linear-gradient(135deg, #ea8705, #764ba2);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ .subtitle {
+     color: #64748b;
+     font-size: 1.1rem;
+     margin-bottom: 40px;
+ }
+
+  .input-fields {
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+ }
+
+ /* Media Queries */
+ @media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column; /* Ändert die Ausrichtung auf vertikal (untereinander) */
+        min-height: auto; /* Anpassung der Mindesthöhe kann hier sinnvoll sein */
+    }
+
+    .container-left,
+    .container-right {
+        max-width: 100%; /* Jeder Container nimmt die volle Breite ein */
+        border-right: none; /* Entfernt den rechten Border vom linken Container, wenn sie untereinander sind */
+        border-bottom: 1px solid #e0e0e0; /* Fügt einen unteren Border hinzu, falls gewünscht */
+    }
+
+    /* Optional: Entfernt den unteren Border für den letzten Container, falls die Struktur das erlaubt */
+    .container-right {
+        border-bottom: none;
+    }
+}
