@@ -96,6 +96,14 @@
      transform: translateY(-2px);
  }
 
+ textarea {
+     min-height: 120px;
+     resize: vertical;
+     font-family: inherit;
+ }
+
+ 
+
  /* Media Queries */
  @media (max-width: 1200px) {
     .main-content {
