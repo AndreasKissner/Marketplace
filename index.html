@@ -10,27 +10,40 @@
 </head>
 
 <body>
-   
-<div class="annoncen-container">
-    <div class="main-content">
-        <div class="container-left">
-              <h1 id="annonce-create-title">Neue Anzeige erstellen</h1>
-                 <p class="subtitle" id="annonce-create-subtitle">Verkaufen Sie Ihre Artikel schnell und einfach auf den
+
+    <div class="annoncen-container">
+        <div class="main-content">
+            <div class="container-left">
+                <h1 id="annonce-create-title">Neue Anzeige erstellen</h1>
+                <p class="subtitle" id="annonce-create-subtitle">Verkaufen Sie Ihre Artikel schnell und einfach auf den
                     Kanarischen Inseln</p>
 
-                    <form id="annonce-form" class="input-fields">
-                         <section class="form-section title">
+                <form id="annonce-form" class="input-fields">
+                    <section class="form-section title">
                         <label for="title-annonce" id="annonce-label-title">Titel <span
                                 class="required">*</span></label>
                         <input id="title-annonce" type="text" placeholder="z.B. Sack Kartoffeln zu verkaufen" required>
                     </section>
+                     <section class="form-section categorie">
+                        <label for="publiez-categorie" id="annonce-label-category">Kategorie <span
+                                class="required">*</span></label>
+                        <select id="publiez-categorie" name="category" required>
+                            <option value="" id="annonce-option-select-category">Bitte wählen Sie eine Kategorie
+                            </option>
+                            <option id="annonce-option-job" value="job">Jobs</option>
+                            <option id="annonce-option-housing" value="housing">Immobilien</option>
+                            <option id="annonce-option-services" value="services">Dienstleistungen</option>
+                            <option id="annonce-option-sale" value="sale">Artikel zu verkaufen</option>
+                            <option id="annonce-option-other" value="other">Sonstiges</option>
+                        </select>
+                    </section>
 
 
-                    </form>
+                </form>
+            </div>
+            <div class="container-right"></div>
         </div>
-        <div class="container-right"></div>
     </div>
-</div>
 
     <script src="language-switcher.js"></script>
     <script src="translation.js"></script>

@@ -87,6 +87,15 @@
      background: white;
  }
 
+ input:focus,
+ select:focus,
+ textarea:focus {
+     outline: none;
+     border-color: #667eea;
+     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+     transform: translateY(-2px);
+ }
+
  /* Media Queries */
  @media (max-width: 1200px) {
     .main-content {
