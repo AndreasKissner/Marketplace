@@ -6,7 +6,7 @@
 
  body {
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     background: linear-gradient(135deg, #eabe66cc 0%, #a2964bc6 100%);
+     background: linear-gradient(135deg, #18aab2cc 0%, #42e49ec6 100%);
      min-height: 100vh;
      padding: 20px;
  }
@@ -84,7 +84,7 @@
      border-radius: 12px;
      font-size: 1rem;
      transition: all 0.3s ease;
-     background: white;
+     background: rgb(255, 255, 255);
  }
 
  input:focus,
